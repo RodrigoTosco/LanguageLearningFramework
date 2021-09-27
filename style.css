@@ -1,0 +1,67 @@
+:root{
+    --color1: #003459;
+    --color2: #007EA7;
+    --color3: #FFFFFF;
+    --color4: #00A7E1;
+    --color5: #2CA58D;
+    --color6: #AC3931;
+    --color7: #00171F;
+}
+
+body{
+    background-color: var(--color1);
+    margin: 0px;
+    padding: 0px;
+}
+#nav01{
+    background-color: var(--color7);
+    height: 5rem;
+
+}
+
+
+#linkstopages{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-size: 2rem;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#linkstopages a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: var(--color2);
+    padding: 20px 0 0 0 ;
+    border-radius: 10px 10px 0 0;
+}
+
+#linkstopages li{
+    width: 20%;
+    text-align: center;
+}
+
+.container{
+    background-color: var(--color4);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.spaninput{
+    display: block;
+    overflow: hidden;
+    padding-right: 1rem;
+    padding-left: 5px;
+}
+
+.container div{
+    padding: 20px;
+}
+
+table, th, td{
+    border: 1px solid black;
+}

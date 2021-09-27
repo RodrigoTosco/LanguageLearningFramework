@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GermanLearning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="nav01">
+        <ul id="linkstopages">
+            <li><a href="" target="_blank">Home</a></li>
+            <li><a href="" target="_blank">Lists</a></li>
+            <li><a href="" target="_blank">Statistics</a></li>
+            <li><a href="" target="_blank">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div>
+            <label style="float: left;">Words in german</label><span class="spaninput" ><input id="wordGerman" type="text" style="width: 100%; height:30px"/></span>
+        </div>
+        <div>
+            <label style="float: left;">Words in spanish</label><span class="spaninput"><input id="wordSpanish" type="text" style="width: 100%; height: 30px"/></span>
+        </div>
+
+        <div id = "termTypeRadios">
+            <input type="radio" name="termType" id="radioverb" value="verb" checked><label for="radioverb">Verb</label>
+            <input type="radio" name="termType" id="radionoun" value="noun"><label for="radionoun">Noun</label>
+            <input type="radio" name="termType" id="radioadjective" value="adjective"><label for="radioadjective">Adjective</label>
+            <input type="radio" name="termType" id="radiophrasalVerb" value="phrasalVerb"><label for="radiophrasalVerb">Phrasal Verb</label>
+        </div>
+
+        <div style="text-align: right;">
+            <button id="addWordToList">Add to list</button>
+        </div>
+        
+    </div>
+
+    <div class="container">
+        <h1>Table with all phrases and translations</h1>
+        <div>
+            <button id="btnSaveTable">Save table</button>
+        </div>
+        <table id ="listTable">
+            <tr>
+                <th>Term in german</th>
+                <th>Term in spanish</th>
+            </tr>
+        </table>
+
+        <div>
+            <button id="btnDeleteTable">Delete table</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
